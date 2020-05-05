@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {RouterModule} from '@angular/router';
-import { NbSidebarModule, NbLayoutModule, NbButtonModule } from '@nebular/theme';
+import { NbSidebarModule, NbLayoutModule, NbButtonModule, NbCardModule } from '@nebular/theme';
 import { SearchComponent } from './search/search.component';
 
 
@@ -20,7 +20,8 @@ import { SearchComponent } from './search/search.component';
     NbLayoutModule,
     NbSidebarModule,
     NbButtonModule,
-    RouterModule,
+    NbCardModule,
+    RouterModule, 
   ], 
 
 
