@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {RouterModule} from '@angular/router';
-import { NbSidebarModule, NbLayoutModule, NbButtonModule, NbCardModule } from '@nebular/theme';
+import { NbSidebarModule, NbLayoutModule, NbButtonModule, NbCardModule, NbSearchModule } from '@nebular/theme';
 import { SearchComponent } from './search/search.component';
 
 
@@ -21,7 +21,8 @@ import { SearchComponent } from './search/search.component';
     NbSidebarModule,
     NbButtonModule,
     NbCardModule,
-    RouterModule, 
+    RouterModule,
+    NbSearchModule, //Installing nebular search...
   ], 
 
 
