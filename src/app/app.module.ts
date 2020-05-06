@@ -9,6 +9,7 @@ import { NbEvaIconsModule } from '@nebular/eva-icons';
 
 //Import my feature module
 import {NebularPageModule} from './nebular-page/nebular-page.module'
+import { ApiService } from './api.service';
 @NgModule({
   declarations: [
     AppComponent
@@ -19,11 +20,11 @@ import {NebularPageModule} from './nebular-page/nebular-page.module'
     BrowserAnimationsModule,
     NbThemeModule.forRoot({ name: 'default' }),
     NbLayoutModule,
-    NbSidebarModule.forRoot(),//Fx NbService proivder error
+    NbSidebarModule.forRoot(),//Fix NbService proivder error
     NbEvaIconsModule, 
     NebularPageModule, // Importing my custom module
   ],
-  providers: [],
+  providers: [ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

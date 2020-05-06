@@ -16,5 +16,10 @@
           including galaxies beyond the Milky Way.
         </nb-card-body>
       </nb-card>
+      <nb-card *ngFor="let f of catFacts">
+        <nb-card-body>
+          {{f.text}}
+        </nb-card-body>
+      </nb-card>
     </nb-layout-column>
   </nb-layout>
